@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile Page</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+<a href="/">Back to Index</a>
+<div class="center-title"><h1>Profile Page</h1></div>
+
+<!-- This success message will show once the profile update successfully -->
+<div class="dv-notify-success alert alert-success">Profile Updated successfully</div>
+
+<!-- This failed message will show in case its not able to update -->
+<div class="dv-notify-failed alert alert-danger">Profile could not be updated</div>
+
+<!-- This will display the default message from DevLess -->
+<div class="dv-notify alert alert-warning text-center"></div>
+
+<form class="dv-updateProfile center-single-page">
+	<input type="text" class="form-control" name="username" placeholder="please pick a username"><br>
+	<input type="email" class="form-control" name="email" placeholder="please pick an email"><br>
+	<input type="number" class="form-control" name="phonenumber" placeholder="please enter phonenumber"><br>
+	<input type="text" class="form-control" name="firstname" placeholder="please enter firstname"><br>
+	<input type="text" class="form-control" name="lastname" placeholder="please enter lastname"><br>
+	<input type="password" class="form-control" name="password" placeholder="enter new password"><br>
+	<button type="submit" class="btn btn-info pull-right">Edit Profile</button>
+</form>
+<script src="http://localhost:6060/js/devless-sdk.js" class="devless-connection" devless-con-token="14a687b94b1532cc7d2330ae530e3be5"></script>
+
+</body>
+</html>

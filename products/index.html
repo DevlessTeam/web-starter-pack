@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product List</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+  <a href="/">Back to Index</a>
+  <div class="center-title"><h3>All products</h3></div>
+  <div class="dv-notify alert alert-warning"></div>
+  <div class="center-products">
+
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>&nbsp;Quantity</th> 
+          <th>&nbsp;price</th>
+          <th>&nbsp;Image</th>
+          <th>&nbsp;Update</th>
+          <th>&nbsp;Delete</th>
+        </tr>
+        <tbody class="dv-get-all:inventroy:products">
+          <tr>
+            <td><a class="var-id" href="/product?product_id=var-id"><span class="var-name">...</span></td>
+            <td class="var-quantity">...</td>
+            <td class="var-price">...</td>
+            <td><img class="var-image" src=""  width="20" height="20" \></td>
+            <td><button class="dv-update btn btn-sm btn-info">Update Product</button></td>
+            <td><button class="dv-delete btn btn-sm btn-danger">Delete Product</button></td>
+          </tr> 
+        </tbody>
+
+      </table>
+
+
+    </div>
+
+     <div class="row shift-right">
+ <div class="col-lg-6">
+    <h3>Add a new product</h3>
+      <form class="dv-add-oneto:inventroy:products">
+      <input type="text" class="form-control" name="name" placeholder="product name"><br>
+      <input type="number" class="form-control" name="quantity" placeholder="product quantity"><br>
+      <input type="price" class="form-control" name="price" placeholder="product price"><br>
+      <input type="file" class="form-control" name="image" placeholder="Product image"><br>
+      <button type="submit" class="btn btn-info pull-right">Add a product</button>
+      </form>
+    </div>
+  <div class="col-lg-6 ">
+      <h3>Update a product</h3>
+      <form class="dv-update-oneof:inventroy:products">
+      <input type="text" class="form-control" name="name" placeholder="product name"><br>
+      <input type="number" class="form-control" name="quantity" placeholder="product quantity"><br>
+      <input type="price" class="form-control" name="price" placeholder="product price"><br>
+      <input type="file" class="form-control" name="image" placeholder="Product image"><br>
+      <button type="submit" class="btn btn-info pull-right">Update a product</button>
+      </form>
+  </div>
+  </div>
+  
+  <!-- This is a sample DevLess SDK, you can copy yours from the header of your DevLess instance. Click on the connect to app button to copy yours -->
+  <script src="http://localhost:6060/js/devless-sdk.js" class="devless-connection" devless-con-token="14a687b94b1532cc7d2330ae530e3be5"></script>
+
+
+</body>
+</html>

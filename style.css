@@ -1,0 +1,29 @@
+.center-title {
+    text-align: center;
+}
+
+.center-login { 
+	margin-left: 5%;
+	margin-right: 5%
+}
+
+.center-single-page { 
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+.center-products { 
+	margin-left: 35%;
+
+}
+
+.side-spaces {
+	margin-left: 20%;
+
+}
+
+.shift-right {
+	margin-left: 10%;
+	margin-right: 20%;
+}
+

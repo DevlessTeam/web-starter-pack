@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+<a href="/">Back to Index</a>
+<div class="center-title"><h1>Contact Us</h1></div>
+
+<!-- This will display the default message from DevLess -->
+<div class="dv-notify"></div>
+
+<!-- This message will only show if the contact is submitted successfully -->
+<div class="dv-notify-success" style="color: green; display: none">Thanks for reaching out</div>
+
+<!-- This message will show incase the contact details could not be saved -->
+<div class="dv-notify-failed" style="color: red; display: none">Sorry something snapped please try again</div>
+
+<!-- The class `dv-add-oneto:contact_us:contacts_table` in the form directs 
+DevLess to send data from the form to the service `contact_us` in the table `contacts_table` on the press of the submit button
+-->
+ <form class="dv-add-oneto:contact_us:contacts_table center-single-page">
+	<input type="text" class="form-control" name="name" placeholder="please enter your name here"><br>
+	<input type="email" class="form-control" name="email" placeholder="please enter your email here "><br>	
+	<textarea name="message" class="form-control">Enter message here</textarea><br>
+	<button type="submit" class="btn btn-info pull-right">Contact Us</button>
+</form>
+
+
+<script src="http://localhost:6060/js/devless-sdk.js" class="devless-connection" devless-con-token="14a687b94b1532cc7d2330ae530e3be5"></script>
+
+</body>
+</html>
+
+
+
+
+
