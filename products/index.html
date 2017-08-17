@@ -5,13 +5,18 @@
   <link rel="stylesheet" type="text/css" href="/style.css">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
+<div class="container" style="align-content: center;">
 <body>
-  <a href="/">Back to Index</a>
-  <div class="center-title"><h3>All products</h3></div>
+<div class="container" style="text-align: center;">  <a href="/" style="text-align: center;">Back to Index</a> </div>
   <div class="dv-notify alert alert-warning"></div>
+    <div class="row">
+            <div class="col-md-12 col-md-offset-0">
+                <div class="panel panel-primary">
+                    <div class="panel-heading" style="text-align: center;">All Products</div>
+                    <div class="panel-body">
   <div class="center-products">
 
-      <table>
+      <table class="table">
         <tr>
           <th>Name</th>
           <th>&nbsp;Quantity</th> 
@@ -22,7 +27,7 @@
         </tr>
         <tbody class="dv-get-all:inventory:products">
           <tr>
-            <td><a class="var-id" href="/product?product_id=var-id"><span class="var-name">...</span></td>
+            <td><a class="var-id" href="/product?product_id=var-id"><span class="var-name">...</span> </a></td>
             <td class="var-quantity">...</td>
             <td class="var-price">...</td>
             <td><img class="var-image" src=""  width="20" height="20" \></td>
@@ -32,11 +37,15 @@
         </tbody>
 
       </table>
-
+</div></div></div></div>
 
     </div>
 
-     <div class="row shift-right">
+  <div class="row">
+            <div class="col-md-12 col-md-offset-0">
+                <div class="panel panel-primary">
+                    <div class="panel-heading" style="text-align: center;">Adding & Updating Products</div>
+                    <div class="panel-body">  
  <div class="col-lg-6">
     <h3>Add a new product</h3>
       <form class="dv-add-oneto:inventory:products">
@@ -44,8 +53,9 @@
       <input type="number" class="form-control" name="quantity" placeholder="product quantity"><br>
       <input type="price" class="form-control" name="price" placeholder="product price"><br>
       <input type="file" class="form-control" name="image" placeholder="Product image"><br>
-      <button type="submit" class="btn btn-info pull-right">Add a product</button>
-      </form>
+  <div class="col-md-6 col-md-offset-6">
+      <button type="submit" class="btn btn-info">Sign up here </button>
+      </div>      </form>
     </div>
   <div class="col-lg-6 ">
       <h3>Update a product</h3>
@@ -54,10 +64,13 @@
       <input type="number" class="form-control" name="quantity" placeholder="product quantity"><br>
       <input type="price" class="form-control" name="price" placeholder="product price"><br>
       <input type="file" class="form-control" name="image" placeholder="Product image"><br>
-      <button type="submit" class="btn btn-info pull-right">Update a product</button>
-      </form>
+  <div class="col-md-6 col-md-offset-6">
+      <button type="submit" class="btn btn-info">Sign up here </button>
+      </div>
+            </form>
   </div>
-  </div>
+      </div></div></div></div>
+
   
   <!-- This is a sample DevLess SDK, you can copy yours from the header of your DevLess instance. Click on the connect to app button to copy yours -->
   <script src="http://localhost:6060/js/devless-sdk.js" class="devless-connection" devless-con-token="14a687b94b1532cc7d2330ae530e3be5"></script>
